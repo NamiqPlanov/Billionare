@@ -5,27 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./download.jpeg">
+    <link rel="shortcut icon" href="./images/download.jpeg">
     <title>Billionare</title>
 </head>
 <body>
-    <div class="container">
-       <div class="login-page">
-          <h1 class="beginning">Do you want to be a billionare? &#129297</h1>
-          <input type="text" class="name" placeholder="Enter name">
-          <input type="text" class="surname" placeholder="Enter surname">
-          <input type="number" class="phone" placeholder="Enter phone number">
-          <button class="start", onclick="opendiv2()">Start</button>
-     </div>
-     <div class="game-page">
-        <button class="gamebtn" onclick="closediv2()">hello</button>
-     </div>
-     <div class="finish-page">
-        <h2>Correct answers: <span class="answers">11</span></h2>
-        <h2> Gained money: <span class="money">4000</span></h2>
-        <button class="finish", onclick="closediv3()">Start game again</button>
-     </div>
+   <div class="container">
+      <div class="login-page">
+         <h1 class="beginning">Do you want to be a billionare? &#129297</h1>
+         <input type="text" class="name" placeholder="Enter name">
+         <input type="text" class="surname" placeholder="Enter surname">
+         <input type="number" class="phone" placeholder="Enter phone number">
+         <button class="start">Start</button>
+    </div>
+    <div class="game-page">
+       <aside class="prizes">
+        <div class="pcontainer">
+          <p>51200 AZN</p>
+          <p>25600 AZN</p>
+          <p>12800 AZN</p>
+          <p>6400 AZN</p>
+          <p>3200 AZN</p>
+          <p>1600 AZN</p>
+          <p>800 AZN</p>
+          <p>400 AZN</p>
+          <p>200 AZN</p>
+          <p>100 AZN</p>
+        </div>
+       </aside>
+       <main class="questions">
+         <h2 class="question">Salam necesen?</h2>
+         <div class="answers">
+         <p >yaxsi</p>
+         <p >pis</p>
+         <p >normal</p>
+         <p >Sukur</p>
+        </div>
+        <button class="nextquestion">Next</button>
+         
+       </main>
+       <aside class="tips">
+         <button>
+           <img id="fifty" draggable="false" src="./images/50.png">
+         </button>
+         <button>
+           <img id="joker" draggable="false" src="./images/joker.png">
+         </button>
+         <button>
+           <img id="call" draggable="false" src="./images/phone-call.png">
+         </button>
+       </aside>
+    </div>
+    <div class="finish-page">
+       <h2>Correct answers: <span class="correct-answers">11</span></h2>
+       <h2> Gained money: <span class="money">4000</span></h2>
+       <button class="finish">Start game again</button>
+    </div>
 </div>
-<script src="./app.js"></script>
+<script src="./js/utils.js"></script>
+<script src="./js/import.js"></script>
+<script src="./js/app.js"></script>
 </body>
 </html>
