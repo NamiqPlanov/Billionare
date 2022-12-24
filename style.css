@@ -27,7 +27,7 @@ body{
     gap: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px;
-    
+    display: none;
 }
 .login-page h1{
     font-size: 30px;
@@ -47,9 +47,6 @@ body{
 .start:hover{
     cursor: pointer;
     background-color: rgb(23, 23, 214);
-}
-.game-page{
-    
 }
 .finish-page{
     width: 500px;
@@ -90,15 +87,13 @@ body{
     box-shadow: 0 0 8px rgba(26, 26, 248);
     
 }
-.tips{
 
-}
 .game-page{
-    display: flex;
+    
     flex-direction: row;
     gap: 90px;
     justify-content: center;
-    display: none;
+    display: flex;
 }
 .questions{
     max-width: 550px;
@@ -169,3 +164,20 @@ p{
 .nextquestion:hover{
     cursor: pointer;
 }
+.correctanswer{
+    background-color: var(--success-clr)
+}
+.correctanswer~p{
+    pointer-events: none !important;
+}
+.wronganswer{
+    background-color: var(--fail-clr);
+}
+.wronganswer~p{
+    pointer-events: none !important;
+}
+:root{
+    --success-clr: rgb(16, 102, 16);
+    --fail-clr: rgb(153, 19, 19);
+}
+
